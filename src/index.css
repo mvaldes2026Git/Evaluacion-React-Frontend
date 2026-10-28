@@ -1,0 +1,5 @@
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #007acc; /* O el color principal de tu tema */
+}
