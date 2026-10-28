@@ -35,26 +35,33 @@
    > "Cambiemos el NotFound.jsx, para que no tenga divs. Terminemos el Paso 5 y actualicemos el uso_ia.md y el README.md"
 
 10. **Ajuste unificado de README.md:**
-    > "Rehaz el README.md y el uso_ia.md (ya que estoy mandando nuevo prompt) para añadir en el README.md los pasos para instalar dependencias y correr en local con comandos de Powershell o Git Bash, todo mantenlo igual en README.md, solo agrega eso, ya que te salió en separado porque es comando, y claro, actualiza uso_ia.md como te dije. Y ahora sí, concluimos al paso 5."
+    > "Rehaz el README.md y el uso_ia.md (ya que estoy mandando nuevo prompt) para añadir en el README.md los pasos para instalar dependencias y correr en local con comandos de Powershell o Git Bash..."
 
 11. **Fase 6 - Componente TarjetaProyecto:**
     > "FASE 6 POR FAVOR, NO TE EQUIVOQUES. NO OLVIDES ACTUALIZAR EL uso_ia.md NUNCA."
 
-12. **Refactorización minimalista de TarjetaProyecto en Fase 6:**
-    > "No uses esas tarjetas grandotas que mandas, porque malogras el código, de nuevo por favor."
+12. **Inclusión de maquetación CSS y nuevos recursos:**
+    > "Falta el diseño, tiene que quedar igual que este."
+
+13. **Inclusión de imágenes, redirecciones de proyectos y Formulario de Contacto:**
+    > "Falta los datos de contacto, la imagen de perfil y de presentación... y añadir más proyectos (ej. rutas-grafos)... Ah, y en el uso_ia.md pongamos nivel de comprensión, siendo sincero, es intermedio."
+
+14. **Ajuste a formato de imagen .jpg y formato directo de entrega:**
+    > "Mis archivos son .jpg... Actualiza el código por favor, pero déjalo todo igual para que no hayan cortes por formato."
+    > "No mandes esas tarjetas grandes porque malogras el código y me demoro más descargando y cambiando nombre para reemplazar archivos."
 
 ## 4. Outputs
-- Creación del componente reutilizable `TarjetaProyecto.jsx` recibiendo `titulo`, `descripcion` y `enlace` mediante desestructuración de `props`.
-- Enlaces externos a repositorios configurados de manera segura mediante la etiqueta `<a>` con `target="_blank"` y `rel="noopener noreferrer"`.
-- Implementación de la vista `Proyectos.jsx` iterando con `.map()` un arreglo de objetos de proyectos reales y pasando las `props` al componente hijo `TarjetaProyecto`.
-- Mantenimiento estricto del estándar HTML5 semántico puro (cero etiquetas `<div>`) y atributos de accesibilidad WAI-ARIA (`role="img"`, `aria-label`).
-- Actualización completa y ordenada del registro de auditoría `uso_ia.md`.
+- Configuración de imágenes estáticas en formato `.jpg` (`/img/presentacion.jpg` y `/img/perfil.jpg`) integradas mediante etiquetas semánticas `<figure>`, `<img>` y `<figcaption>`.
+- Inclusión del proyecto `Rutas y Grafos` en `Proyectos.jsx` con enlace a repositorio externo en GitHub.
+- Formulario de contacto en `Contacto.jsx` con captura de estado (`useState`), validación de campos obligatorios y formato de email.
+- Documento `uso_ia.md` actualizado con el nivel de comprensión intermedio declarado.
 
 ## 5. Ajustes concretos
-- Se simplificó la estructura de `TarjetaProyecto.jsx` empleando únicamente las etiquetas semánticas `<article>`, `<figure>`, `<figcaption>`, `<header>`, `<p>` y `<a>`, eliminando wrappers neutros innecesarios.
-- Se implementó renderizado condicional en `TarjetaProyecto.jsx` para mostrar un texto informativo cuando un proyecto carece de repositorio público.
-- En `Proyectos.jsx`, las tarjetas se agruparon dentro de una lista semántica `<ul>` e ítems `<li>` con sus claves únicas (`key`).
-- Se verificó que el cambio de datos en el arreglo de objetos modifique automáticamente el contenido renderizado en la interfaz.
+- Se actualizaron las extensiones de imagen a `.jpg` en los componentes `Inicio.jsx` y `SobreMi.jsx`.
+- Se aseguró que todo el código entregado utilice HTML5 semántico puro (cero etiquetas `<div>`) y atributos WAI-ARIA.
+- Se mantuvieron los nombres y rutas estandarizadas dentro de la carpeta `public/img/`.
 
 ## 6. Reflexión crítica propia
-Diseñar componentes reutilizables en React requiere mantener un marcado ligero y directo. Evitar contenedores innecesarios no solo previene problemas de maquetación en CSS, sino que preserva la accesibilidad nativa del navegador. La abstracción de `TarjetaProyecto` permite escalar la vista de proyectos fácilmente modificando únicamente la fuente de datos, demostrando la potencia del flujo unidireccional de datos mediante `props`.
+**Declaración de nivel de comprensión:** Mi nivel de comprensión sobre las tecnologías implementadas (React, React Router v6, JSX y HTML5 Semántico) es **Intermedio**.
+
+Entiendo la arquitectura basada en componentes, el paso de datos a través de `props`, el manejo de estado local con `useState` y el enrutamiento de una SPA. Utilizar imágenes en formato `.jpg` dentro de etiquetas semánticas `<figure>` permite enriquecer la presentación visual sin comprometer la accesibilidad del sitio ni romper la estructura de componentes.

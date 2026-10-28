@@ -8,8 +8,9 @@ export default function SobreMi() {
   return (
     <article className="pagina-sobre-mi">
       <section className="presentacion" aria-labelledby="sobre-mi-title">
-        <figure role="img" aria-label="Avatar de perfil de Mauricio Valdés">
-          <figcaption>Avatar de perfil</figcaption>
+        <figure role="img" aria-label="Foto de perfil de Mauricio Valdés">
+          <img src="/img/perfil.jpg" alt="Foto de Mauricio Valdés Paredes" />
+          <figcaption>Mauricio Valdés Paredes</figcaption>
         </figure>
 
         <header>
@@ -17,7 +18,7 @@ export default function SobreMi() {
         </header>
 
         <p>
-          Soy <strong>Mauricio Valdés Paredes</strong>, estudiante de Ingeniería Civil Informática de la Universidad Católica de Temuco.
+          Soy <strong>Mauricio Valdés Paredes</strong>, estudiante de Ingeniería Civil Informática.
           Me apasiona el desarrollo web y me interesa crear soluciones tecnológicas que mejoren la experiencia de las personas.
         </p>
       </section>

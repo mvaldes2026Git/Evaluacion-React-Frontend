@@ -27,8 +27,9 @@ export default function Inicio() {
           </Link>
         </p>
 
-        <figure role="img" aria-label="Imagen representativa del desarrollador">
-          <figcaption>Imagen de presentación</figcaption>
+        <figure role="img" aria-label="Imagen de presentación de Mauricio Valdés">
+          <img src="/img/presentacion.jpg" alt="Presentación de Mauricio Valdés Paredes" />
+          <figcaption>Presentación del portafolio</figcaption>
         </figure>
       </section>
 
