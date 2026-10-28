@@ -1,6 +1,3 @@
----
-
-```markdown
 # Registro de Uso de Inteligencia Artificial
 
 ## 1. IA usada
@@ -52,8 +49,23 @@
 14. **Ajuste de encuadre de imagen en Inicio.jsx y maquetación de Contacto.jsx:**
     > "Arregla eso del presentacion.jpg, y toquemos Contacto.jsx para que quede así, y en TuNombre obvio va 'Mauricio Valdés Paredes'. TODO DEBE QUEDAR COMO EN LA TERCERA IMAGEN."
 
-15. **Verificación de árbol de archivos y cierre definitivo:**
+15. **Verificación de árbol de archivos y estructura:**
     > "La estructura es así. Ahora sí, culminemos todo." *(Adjunta capturas exactas del explorador de archivos de VS Code)*
+
+16. **Análisis de estado del repositorio GitHub:**
+    > "https://github.com/mvaldes2026Git/Evaluacion-React-Frontend ANALIZA TODO PARA VER SI ESTÁ BIEN TODO."
+
+17. **Rediseño de TarjetaProyecto según Wireframe 4:**
+    > "Último retoque: Modifica este diseño. Ah, e hice retoques en el uso_ia.md. No es necesario que la imagen quede llena, con que quede la plantilla, todo está bien."
+
+18. **Restauración y corrección de la hoja de estilos CSS (`index.css`):**
+    > "Noooo, me cargué el CSS. Restáuralo de nuevo para que quede igual, pero con estos cambios. Y ahora sí, terminamos."
+
+19. **Verificación visual final 1:1 con el Wireframe Oficial:**
+    > "https://github.com/mvaldes2026Git/Evaluacion-React-Frontend ¿Todo está igual al diseño de la img?"
+
+20. **Registro definitivo de prompts y cierre de auditoría:**
+    > "Modifica solo añadiendo prompts. Y ahora sí, terminamos."
 
 ## 4. Outputs
 - Configuración completa de la SPA con React Router v6 y maquetación semántica en cinco vistas principales (`Inicio`, `SobreMi`, `Habilidades`, `Proyectos`, `Contacto`) y manejo de ruta desconocida (`NotFound`).
@@ -71,4 +83,4 @@
 ## 6. Reflexión crítica propia
 **Declaración de nivel de comprensión:** Mi nivel de comprensión sobre las tecnologías implementadas (React, React Router v6, JSX y HTML5 Semántico) es **Intermedio**.
 
-Entiendo la lógica del desarrollo de una SPA en React, la separación de responsabilidades en componentes, el flujo de datos unidireccional con `props`, la gestión de estado con `useState` y la maquetación accesible con HTML5 y WAI-ARIA. La interacción constante con la Inteligencia Artificial me sirvió como herramienta de apoyo para agilizar el diseño CSS, asegurar la semántica libre de etiquetas neutras y estructurar la documentación técnica exigida por la institución.
+Entiendo la lógica del desarrollo de una SPA en React, la separación de responsabilidades en componentes, el flujo de datos unidireccional con `props`, la gestión de estado con `useState` y la maquetación accesible con HTML5 y WAI-ARIA. La interacción constante con la Inteligencia Artificial me sirvió como herramienta de apoyo para agilizar el diseño CSS, asegurar la semántica libre de etiquetas neutras y estructurar la documentación técnica exigida por la institución. Y también he aprendido algo muy valioso que todos debemos saber y entender, cuando haces trabajos pequeños, parece fácil, pero cuando te metes a fondo, te das cuenta de que la IA no lo es todo, por ejemplo, si no le digo a la IA que se debe usar lenguaje semántico, me va a tirar puras "SOPAS DE DIVS", lo cuál no es bueno por muchos motivos perjudiciales y es la antítésis del código limpio. Por eso, cada uno de nosotros debe saber lo que REALMENTE estamos haciendo.
