@@ -1,4 +1,4 @@
-/* Reset básico y tipografía */
+/* Reset basico y tipografia */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,13 +21,13 @@ body {
 
 main#main-content {
   flex: 1;
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-/* Header & Navegación (Wireframe) */
+/* Header & Navegacion */
 header[role="banner"] {
   display: flex;
   justify-content: space-between;
@@ -69,27 +69,28 @@ nav[aria-label="Navegación principal"] a.active {
   border-bottom: 2px solid #111827;
 }
 
-/* Footer (Wireframe) */
+/* Footer */
 footer {
   text-align: center;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   border-top: 1px solid #e5e7eb;
-  color: #6b7280;
-  font-size: 0.875rem;
-  background-color: #f9fafb;
+  color: #4b5563;
+  font-size: 0.9rem;
+  background-color: #f3f4f6;
+  margin-top: auto;
 }
 
-/* Página de Inicio (Wireframe 1) */
+/* Pagina Inicio (Wireframe 1) */
 .pagina-inicio {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -102,7 +103,7 @@ footer {
 }
 
 .hero header h2 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: #4b5563;
   margin-bottom: 1rem;
@@ -110,42 +111,49 @@ footer {
 
 .hero p {
   color: #4b5563;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
 }
 
 .btn-explorar, .hero a.btn-explorar {
   display: inline-block;
-  background-color: #1f2937;
+  background-color: #2d3748;
   color: #ffffff;
-  padding: 0.625rem 1.5rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   transition: background-color 0.2s ease;
 }
 
 .btn-explorar:hover {
-  background-color: #111827;
+  background-color: #1a202c;
 }
 
 .hero figure {
   background-color: #e5e7eb;
   border-radius: 8px;
-  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #6b7280;
-  font-weight: 500;
+}
+
+.hero figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Grid de Tarjetas Destacadas */
 .destacados .grid-destacados {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -153,25 +161,25 @@ footer {
   background-color: #f9fafb;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .destacados article span {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .destacados article h3 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #1f2937;
 }
 
-/* Página Sobre Mí (Wireframe 2) */
+/* Pagina Sobre Mi (Wireframe 2) */
 .pagina-sobre-mi {
   display: flex;
   flex-direction: column;
@@ -187,19 +195,21 @@ footer {
 .presentacion figure {
   width: 120px;
   height: 120px;
-  background-color: #e5e7eb;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   flex-shrink: 0;
-  color: #6b7280;
-  font-size: 0.8rem;
-  text-align: center;
+  background-color: #e5e7eb;
+}
+
+.presentacion figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .pagina-sobre-mi h1, .pagina-sobre-mi h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
@@ -212,10 +222,10 @@ footer {
 }
 
 .pagina-sobre-mi li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-/* Página Habilidades (Wireframe 3) */
+/* Pagina Habilidades (Wireframe 3) */
 .pagina-habilidades {
   display: flex;
   flex-direction: column;
@@ -225,11 +235,10 @@ footer {
 .pagina-habilidades h1 {
   font-size: 1.75rem;
   font-weight: 800;
-  margin-bottom: 1rem;
 }
 
 .pagina-habilidades h2 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -237,7 +246,7 @@ footer {
 .lista-tecnologias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -247,18 +256,17 @@ footer {
   border-radius: 8px;
   padding: 1.25rem 1rem;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .lista-tecnologias article h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.25rem;
 }
 
 .lista-tecnologias article p {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   color: #6b7280;
 }
 
@@ -275,11 +283,11 @@ footer {
   color: #374151;
   padding: 0.4rem 1rem;
   border-radius: 9999px;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
-/* Página Proyectos (Wireframe 4) */
+/* Pagina Proyectos (Wireframe 4) */
 .pagina-proyectos {
   display: flex;
   flex-direction: column;
@@ -298,61 +306,165 @@ footer {
 .lista-proyectos ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
   list-style: none;
 }
 
 .tarjeta-proyecto {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1.25rem;
-  align-items: center;
-}
-
-.tarjeta-proyecto figure {
-  background-color: #e5e7eb;
-  border-radius: 6px;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-  color: #6b7280;
 }
 
 .tarjeta-proyecto h3 {
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 0.25rem;
 }
 
 .tarjeta-proyecto p {
   color: #4b5563;
-  font-size: 0.925rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .tarjeta-proyecto a {
   display: inline-block;
-  background-color: #1f2937;
+  align-self: flex-start;
+  background-color: #2d3748;
   color: #ffffff;
   padding: 0.4rem 0.9rem;
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
+  margin-top: 0.25rem;
 }
 
 .tarjeta-proyecto a:hover {
-  background-color: #111827;
+  background-color: #1a202c;
 }
 
-/* Adaptabilidad Móvil */
+/* Pagina Contacto (Wireframe 5) */
+.pagina-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+}
+
+.pagina-contacto header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.pagina-contacto header p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.contenedor-formulario {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.contenedor-formulario fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contenedor-formulario p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contenedor-formulario label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.contenedor-formulario input,
+.contenedor-formulario textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contenedor-formulario input:focus,
+.contenedor-formulario textarea:focus {
+  border-color: #2563eb;
+}
+
+.contenedor-formulario button[type="submit"] {
+  width: 100%;
+  background-color: #334155;
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.contenedor-formulario button[type="submit"]:hover {
+  background-color: #1e293b;
+}
+
+.mensaje-exito {
+  color: #166534;
+  background-color: #dcfce7;
+  border: 1px solid #bbf7d0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mensaje-error {
+  color: #991b1b;
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsivo */
 @media (max-width: 640px) {
   header[role="banner"] {
     flex-direction: column;
@@ -367,9 +479,5 @@ footer {
   .presentacion {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .tarjeta-proyecto {
-    grid-template-columns: 1fr;
   }
 }

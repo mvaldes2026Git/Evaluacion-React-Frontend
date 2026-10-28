@@ -1,3 +1,6 @@
+---
+
+```markdown
 # Registro de Uso de Inteligencia Artificial
 
 ## 1. IA usada
@@ -40,28 +43,32 @@
 11. **Fase 6 - Componente TarjetaProyecto:**
     > "FASE 6 POR FAVOR, NO TE EQUIVOQUES. NO OLVIDES ACTUALIZAR EL uso_ia.md NUNCA."
 
-12. **Inclusión de maquetación CSS y nuevos recursos:**
+12. **Inclusión de maquetación CSS:**
     > "Falta el diseño, tiene que quedar igual que este."
 
-13. **Inclusión de imágenes, redirecciones de proyectos y Formulario de Contacto:**
-    > "Falta los datos de contacto, la imagen de perfil y de presentación... y añadir más proyectos (ej. rutas-grafos)... Ah, y en el uso_ia.md pongamos nivel de comprensión, siendo sincero, es intermedio."
+13. **Integración de imágenes .jpg y proyectos específicos:**
+    > "Arregla eso. Y en acorde a estos 2 códigos: Proyectos.jsx ... Habilidades.jsx ... EN ESPAÑOL POR FAVOR. La presentación es presentación.jpg y el perfil es perfil.jpg"
 
-14. **Ajuste a formato de imagen .jpg y formato directo de entrega:**
-    > "Mis archivos son .jpg... Actualiza el código por favor, pero déjalo todo igual para que no hayan cortes por formato."
-    > "No mandes esas tarjetas grandes porque malogras el código y me demoro más descargando y cambiando nombre para reemplazar archivos."
+14. **Ajuste de encuadre de imagen en Inicio.jsx y maquetación de Contacto.jsx:**
+    > "Arregla eso del presentacion.jpg, y toquemos Contacto.jsx para que quede así, y en TuNombre obvio va 'Mauricio Valdés Paredes'. TODO DEBE QUEDAR COMO EN LA TERCERA IMAGEN."
+
+15. **Verificación de árbol de archivos y cierre definitivo:**
+    > "La estructura es así. Ahora sí, culminemos todo." *(Adjunta capturas exactas del explorador de archivos de VS Code)*
 
 ## 4. Outputs
-- Configuración de imágenes estáticas en formato `.jpg` (`/img/presentacion.jpg` y `/img/perfil.jpg`) integradas mediante etiquetas semánticas `<figure>`, `<img>` y `<figcaption>`.
-- Inclusión del proyecto `Rutas y Grafos` en `Proyectos.jsx` con enlace a repositorio externo en GitHub.
-- Formulario de contacto en `Contacto.jsx` con captura de estado (`useState`), validación de campos obligatorios y formato de email.
-- Documento `uso_ia.md` actualizado con el nivel de comprensión intermedio declarado.
+- Configuración completa de la SPA con React Router v6 y maquetación semántica en cinco vistas principales (`Inicio`, `SobreMi`, `Habilidades`, `Proyectos`, `Contacto`) y manejo de ruta desconocida (`NotFound`).
+- Implementación del componente reutilizable `TarjetaProyecto.jsx` recibiendo datos vía `props` e integrando enlaces seguros con `target="_blank"` y `rel="noopener noreferrer"`.
+- Creación de la vista `Contacto.jsx` con formulario controlado mediante `useState`, validación Regex para correos y feedback mediante atributos accesibles WAI-ARIA.
+- Maquetación CSS en `index.css` alineada al wireframe oficial del curso, con límites explícitos para imágenes (`object-fit: cover`) en `public/img/` (`perfil.jpg` y `presentacion.jpg`).
+- Documentación técnica final (`README.md` y `uso_ia.md`) reflejando fielmente la estructura real del proyecto en VS Code.
 
 ## 5. Ajustes concretos
-- Se actualizaron las extensiones de imagen a `.jpg` en los componentes `Inicio.jsx` y `SobreMi.jsx`.
-- Se aseguró que todo el código entregado utilice HTML5 semántico puro (cero etiquetas `<div>`) y atributos WAI-ARIA.
-- Se mantuvieron los nombres y rutas estandarizadas dentro de la carpeta `public/img/`.
+- Se eliminó totalmente el uso de la etiqueta `<div>` en la aplicación, reemplazándola por marcado HTML5 semántico puro (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<fieldset>`, `<legend>`, `<label>`).
+- Se ajustaron las dimensiones de `presentacion.jpg` en la sección Hero de `Inicio.jsx` (`height: 260px`, `object-fit: cover`) para evitar desbordamientos en pantalla.
+- Se configuró el formulario en `Contacto.jsx` con contenedor de fondo gris y campos estilizados conforme a la quinta vista del wireframe oficial.
+- Se registró la estructura exacta del repositorio en el archivo `README.md`, incluyendo los archivos estáticos de la carpeta `public/` (`favicon.svg`, `icons.svg`, `img/perfil.jpg`, `img/presentacion.jpg`).
 
 ## 6. Reflexión crítica propia
 **Declaración de nivel de comprensión:** Mi nivel de comprensión sobre las tecnologías implementadas (React, React Router v6, JSX y HTML5 Semántico) es **Intermedio**.
 
-Entiendo la arquitectura basada en componentes, el paso de datos a través de `props`, el manejo de estado local con `useState` y el enrutamiento de una SPA. Utilizar imágenes en formato `.jpg` dentro de etiquetas semánticas `<figure>` permite enriquecer la presentación visual sin comprometer la accesibilidad del sitio ni romper la estructura de componentes.
+Entiendo la lógica del desarrollo de una SPA en React, la separación de responsabilidades en componentes, el flujo de datos unidireccional con `props`, la gestión de estado con `useState` y la maquetación accesible con HTML5 y WAI-ARIA. La interacción constante con la Inteligencia Artificial me sirvió como herramienta de apoyo para agilizar el diseño CSS, asegurar la semántica libre de etiquetas neutras y estructurar la documentación técnica exigida por la institución.

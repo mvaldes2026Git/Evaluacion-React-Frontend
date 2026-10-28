@@ -1,62 +1,74 @@
-**Mini Portafolio con React**
+# Mini Portafolio Personal - React
 
-**Estudiante: Mauricio Valdés Paredes**
-**Carrera: Ingeniería Civil Informática**
-**Institución: Instituto Tecnológico - Universidad Católica de Temuco**
-**Asignatura: Desarrollo de Frontend**
+Este proyecto es una Aplicación Web de Página Única (SPA) desarrollada en **React** con **Vite** y **React Router v6**, correspondiente a la **Evaluación N°3** de la asignatura Desarrollo Frontend en la carrera de Ingeniería Civil Informática del Instituto Tecnológico de la Universidad Católica de Temuco.
 
-📌 Descripción del Proyecto
+## 👤 Información del Estudiante
 
-Este proyecto consiste en un Mini Portafolio Personal desarrollado con React y React Router v6. Permite navegar de forma fluida (Single Page Application - SPA) entre distintas secciones que presentan la información personal, trayectoria académica, habilidades técnicas y proyectos destacados del estudiante, cumpliendo con estándares estrictos de semántica HTML5 y accesibilidad (WAI-ARIA).
+- **Nombre:** Mauricio Valdés Paredes
+- **Carrera:** Ingeniería Civil Informática
+- **Institución:** Instituto Tecnológico - Universidad Católica de Temuco
+- **Docente:** Cristian Iglesias Vera
 
-🚀 Tecnologías Utilizadas
+---
 
-React 18 / 19
+## 🚀 Características del Proyecto
 
-React Router v6 (BrowserRouter, Routes, Route, Outlet, NavLink, Link)
+- **Navegación SPA:** Implementada con `React Router v6` (`BrowserRouter`, `Routes`, `Route`, `Outlet`, `NavLink`, `Link`), con soporte para ruta 404 (`NotFound.jsx`).
+- **Semántica HTML5 Pura:** Construcción estructurada utilizando etiquetas nativas (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<fieldset>`, `<legend>`, `<label>`) con estricto cumplimiento de cero etiquetas neutras (`<div>`).
+- **Accesibilidad WAI-ARIA:** Atributos de accesibilidad integrados (`role="img"`, `role="status"`, `role="alert"`, `aria-label`, `aria-labelledby`).
+- **Componentes Reutilizables y Props:** Componente `TarjetaProyecto.jsx` para la renderización dinámica de proyectos desde un arreglo de datos.
+- **Formulario Controlado:** Vista `Contacto.jsx` con manejo de estado (`useState`), validación de campos obligatorios y verificación de formato de correo electrónico.
+- **Recursos Gráficos Contenidos:** Manejo de imágenes estáticas en `public/img/` (`perfil.jpg` y `presentacion.jpg`) con contención de dimensiones en CSS para evitar desbordamientos visuales.
 
-Vite (Build Tool / Bundler)
+---
 
-HTML5 Semántico (Estructura pura sin uso innecesario de elementos div)
+## 🛠️ Tecnologías Utilizadas
 
-WAI-ARIA (Atributos de accesibilidad para navegadores y lectores de pantalla)
+- **Library/Framework:** React 18
+- **Enrutamiento:** React Router DOM v6
+- **Build Tool:** Vite
+- **Lenguaje:** JavaScript (ES6+)
+- **Estilos:** CSS3 nativo (CSS Grid y Flexbox)
+- **Control de Versiones:** Git / GitHub
 
-Git & GitHub (Control de versiones)
+---
 
-🛠️ Requisitos Previos
+## 💻 Instrucciones para Ejecución Local
 
-Asegúrate de tener instalados en tu sistema:
+Para clonar y ejecutar este proyecto localmente desde **PowerShell** o **Git Bash**, sigue estos pasos:
 
-Node.js: v18.0.0 o superior
+### 1. Clonar el repositorio
+```bash
+git clone [https://github.com/mvaldes2026Git/Evaluacion-React-Frontend.git](https://github.com/mvaldes2026Git/Evaluacion-React-Frontend.git)
 
-npm: v9.0.0 o superior
-
-Git
-
-💻 Instalación y Ejecución Local
-
-Puedes ejecutar los siguientes comandos en tu terminal de preferencia (PowerShell o Git Bash):
-
-git clone https://github.com/mvaldes2026Git/Evaluacion-React-Frontend.git
+### 2. Entrar a la carpeta del proyecto
+```bash
 cd Evaluacion-React-Frontend
+
+### 3. Instalar las dependencias
+```bash
 npm install
-npm install react-router-dom
+
+### 4. Iniciar servidor de desarrollo
+```bash
 npm run dev
 
-
-Nota: Una vez iniciado el servidor, abre la URL indicada en la consola (por defecto http://localhost:5173) en tu navegador web.
-
-📂 Estructura del Proyecto
+Una vez ejecutado, abre el navegador e ingresa a la dirección indicada por Vite que aparecerá en tu terminal.
 
 Evaluacion-React-Frontend/
-├── node_modules/
 ├── public/
+│   ├── img/
+│   │   ├── perfil.jpg
+│   │   └── presentacion.jpg
+│   ├── favicon.svg
+│   └── icons.svg
 ├── src/
 │   ├── assets/
 │   ├── components/
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
-│   │   └── Layout.jsx
+│   │   ├── Layout.jsx
+│   │   └── TarjetaProyecto.jsx
 │   ├── pages/
 │   │   ├── Contacto.jsx
 │   │   ├── Habilidades.jsx
@@ -76,7 +88,3 @@ Evaluacion-React-Frontend/
 ├── uso_ia.md
 └── vite.config.js
 
-
-📄 Licencia y Derechos
-
-© 2026 Mauricio Valdés Paredes. Todos los derechos reservados.

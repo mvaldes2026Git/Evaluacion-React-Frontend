@@ -10,15 +10,9 @@ export default function Proyectos() {
     },
     {
       id: 2,
-      titulo: 'Gestor de Tareas y Flujos Kanban',
-      descripcion: 'Aplicación web interactiva para la administración de actividades y proyectos en equipo.',
-      enlace: 'https://github.com/mvaldes2026Git/Evaluacion-React-Frontend.git'
-    },
-    {
-      id: 3,
-      titulo: 'Sistema de Gestión Académica',
-      descripcion: 'Proyecto de software para la administración de asignaturas e historial de alumnos.',
-      enlace: null
+      titulo: 'App de rutas mediante gráfos',
+      descripcion: 'App para poder medir todas las rutas posibles entre dos puntos mediante el uso de gráfos con Python.',
+      enlace: 'https://github.com/PieroSotoUCT/rutas-grafos.git'
     }
   ];
 

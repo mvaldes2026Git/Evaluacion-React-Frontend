@@ -9,8 +9,11 @@ export default function SobreMi() {
     <article className="pagina-sobre-mi">
       <section className="presentacion" aria-labelledby="sobre-mi-title">
         <figure role="img" aria-label="Foto de perfil de Mauricio Valdés">
-          <img src="/img/perfil.jpg" alt="Foto de Mauricio Valdés Paredes" />
-          <figcaption>Mauricio Valdés Paredes</figcaption>
+          <img
+            src="/img/perfil.jpg"
+            alt="Foto de Mauricio Valdés Paredes"
+            style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }}
+          />
         </figure>
 
         <header>

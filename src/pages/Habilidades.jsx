@@ -2,10 +2,10 @@ export default function Habilidades() {
   const tecnologias = [
     { id: 'html', nombre: 'HTML', nivel: '90%' },
     { id: 'css', nombre: 'CSS', nivel: '85%' },
-    { id: 'js', nombre: 'JavaScript', nivel: '75%' },
+    { id: 'js', nombre: 'JavaScript', nivel: '85%' },
     { id: 'react', nombre: 'React', nivel: '70%' },
     { id: 'ts', nombre: 'TypeScript', nivel: '60%' },
-    { id: 'python', nombre: 'Python', nivel: '70%' }
+    { id: 'python', nombre: 'Python', nivel: '50%' }
   ];
 
   const herramientas = ['Git', 'GitHub', 'VS Code', 'Figma', 'Node.js'];
