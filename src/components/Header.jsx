@@ -1,9 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header>
-      <nav>
+    <header role="banner">
+      <Link to="/" className="logo" aria-label="Ir a inicio - MiPortafolio">
+        MiPortafolio
+      </Link>
+      <nav aria-label="Navegación principal">
         <ul>
           <li><NavLink to="/" end>Inicio</NavLink></li>
           <li><NavLink to="/sobre-mi">Sobre mí</NavLink></li>
