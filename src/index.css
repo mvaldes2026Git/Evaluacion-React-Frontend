@@ -1,4 +1,4 @@
-/* Reset basico y tipografia */
+/* Reset básico y tipografía global */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +27,7 @@ main#main-content {
   padding: 2rem 1.5rem;
 }
 
-/* Header & Navegacion */
+/* Header & Navegación (Layout) */
 header[role="banner"] {
   display: flex;
   justify-content: space-between;
@@ -69,18 +69,18 @@ nav[aria-label="Navegación principal"] a.active {
   border-bottom: 2px solid #111827;
 }
 
-/* Footer */
+/* Footer (Layout) */
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
   border-top: 1px solid #e5e7eb;
   color: #4b5563;
   font-size: 0.9rem;
-  background-color: #f3f4f6;
+  background-color: #f8fafc;
   margin-top: auto;
 }
 
-/* Pagina Inicio (Wireframe 1) */
+/* 1. Página Inicio */
 .pagina-inicio {
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@ footer {
 
 .btn-explorar, .hero a.btn-explorar {
   display: inline-block;
-  background-color: #2d3748;
+  background-color: #1e293b;
   color: #ffffff;
   padding: 0.6rem 1.4rem;
   border-radius: 6px;
@@ -128,7 +128,7 @@ footer {
 }
 
 .btn-explorar:hover {
-  background-color: #1a202c;
+  background-color: #0f172a;
 }
 
 .hero figure {
@@ -140,6 +140,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .hero figure img {
@@ -149,7 +150,6 @@ footer {
   display: block;
 }
 
-/* Grid de Tarjetas Destacadas */
 .destacados .grid-destacados {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -158,8 +158,8 @@ footer {
 }
 
 .destacados article {
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1.25rem 1rem;
   text-align: center;
@@ -179,7 +179,7 @@ footer {
   color: #1f2937;
 }
 
-/* Pagina Sobre Mi (Wireframe 2) */
+/* 2. Página Sobre Mí */
 .pagina-sobre-mi {
   display: flex;
   flex-direction: column;
@@ -199,6 +199,7 @@ footer {
   overflow: hidden;
   flex-shrink: 0;
   background-color: #e5e7eb;
+  margin: 0;
 }
 
 .presentacion figure img {
@@ -225,7 +226,7 @@ footer {
   margin-bottom: 0.4rem;
 }
 
-/* Pagina Habilidades (Wireframe 3) */
+/* 3. Página Habilidades */
 .pagina-habilidades {
   display: flex;
   flex-direction: column;
@@ -252,7 +253,7 @@ footer {
 
 .lista-tecnologias article {
   background-color: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 1.25rem 1rem;
   text-align: center;
@@ -278,16 +279,16 @@ footer {
 }
 
 .badge-herramienta {
-  background-color: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  color: #374151;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #334155;
   padding: 0.4rem 1rem;
   border-radius: 9999px;
   font-size: 0.85rem;
   font-weight: 500;
 }
 
-/* Pagina Proyectos (Wireframe 4) */
+/* 4. Página Proyectos (Wireframe 4) */
 .pagina-proyectos {
   display: flex;
   flex-direction: column;
@@ -297,58 +298,88 @@ footer {
 .pagina-proyectos header h1 {
   font-size: 1.75rem;
   font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.25rem;
 }
 
 .pagina-proyectos header p {
   color: #6b7280;
+  font-size: 0.95rem;
 }
 
 .lista-proyectos ul {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .tarjeta-proyecto {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.tarjeta-proyecto .imagen-placeholder {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+  margin: 0;
+}
+
+.tarjeta-proyecto .contenido-tarjeta {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 1.25rem;
 }
 
 .tarjeta-proyecto h3 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
 }
 
 .tarjeta-proyecto p {
-  color: #4b5563;
-  font-size: 0.9rem;
+  color: #475569;
+  font-size: 0.925rem;
+  line-height: 1.5;
 }
 
-.tarjeta-proyecto a {
+.tarjeta-proyecto .btn-proyecto {
   display: inline-block;
   align-self: flex-start;
-  background-color: #2d3748;
+  background-color: #1e293b;
   color: #ffffff;
-  padding: 0.4rem 0.9rem;
-  border-radius: 4px;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
   margin-top: 0.25rem;
 }
 
-.tarjeta-proyecto a:hover {
-  background-color: #1a202c;
+.tarjeta-proyecto .btn-proyecto:hover {
+  background-color: #0f172a;
 }
 
-/* Pagina Contacto (Wireframe 5) */
+.tarjeta-proyecto .sin-enlace {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* 5. Página Contacto (Wireframe 5) */
 .pagina-contacto {
   display: flex;
   flex-direction: column;
@@ -464,7 +495,7 @@ footer {
   border: 0;
 }
 
-/* Responsivo */
+/* Responsividad */
 @media (max-width: 640px) {
   header[role="banner"] {
     flex-direction: column;
@@ -479,5 +510,9 @@ footer {
   .presentacion {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .tarjeta-proyecto {
+    grid-template-columns: 1fr;
   }
 }
